@@ -11,20 +11,19 @@
     "start:streaming": "NODE_ENV=development nodemon --config ./cfg-nodemon-streaming.json",
     "start:streaming:prod": "NODE_ENV=production forever start -v -c ts-node streaming.entry.ts",
     "restart:streaming:prod": "forever restart streaming.entry.ts",
-    "stop:streaming:prod": "forever stop streaming.entry.ts",
-    "postinstall": "ts-node ./scripts/hooks/posthook"
+    "stop:streaming:prod": "forever stop streaming.entry.ts"
   },
   "devDependencies": {
+    "@app/omni": "file:../app-omni",
     "@app/streaming": "file:./",
     "@sotaoi/api": "file:../packages/sotaoi-api",
     "@sotaoi/omni": "file:../packages/sotaoi-omni",
     "@types/node": "^14"
   },
   "dependencies": {
+    "@app/omni": "^0.9.1",
     "@sotaoi/api": "^0.9.1",
-    "@sotaoi/config": "^0.9.1",
     "@sotaoi/omni": "^0.9.1",
-    "dotenv": "^8.2.0",
     "forever": "^4.0.1",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
