@@ -1,1 +1,1 @@
-npm run start:proxy
+npm run start:streaming

@@ -14,10 +14,8 @@
     "isolatedModules": true,
     "noEmitOnError": true,
     "paths": {
-      "@app/omni/*": ["../app-omni/*"],
-      "@app/proxy/*": ["./*"],
-      "@sotaoi/api/*": ["../packages/sotaoi-api/*"],
-      "@sotaoi/omni/*": ["../packages/sotaoi-omni/*"]
+      "@app/streaming/*": ["./*"],
+      "@sotaoi/api/*": ["../packages/sotaoi-api/*"]
     }
   },
   "exclude": ["./node_modules"]
