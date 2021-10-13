@@ -1,4 +1,4 @@
-import { config } from '@app/omni/config';
+const { config } = require('@app/omni/config');
 config('');
 import { startSocket } from '@sotaoi/api/io';
 import fs from 'fs';
