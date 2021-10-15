@@ -16,6 +16,7 @@
   "devDependencies": {
     "@app/omni": "file:../app-omni",
     "@app/streaming": "file:./",
+    "@sotaoi/api": "file:../packages/sotaoi-api",
     "@types/node": "^14"
   },
   "dependencies": {
