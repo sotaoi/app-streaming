@@ -1,5 +1,5 @@
-const { config } = require('@app/omni/config');
-config('');
+const { init } = require('@app/omni/init');
+init();
 import { startSocket } from '@sotaoi/api/io';
 import fs from 'fs';
 import path from 'path';
