@@ -19,6 +19,7 @@
     "clean:astreaming": "node ./scripts/clean/clean-astreaming"
   },
   "devDependencies": {
+    "@app/omni": "file:../app-omni",
     "@app/streaming": "file:./",
     "@sotaoi/api": "file:../packages/sotaoi-api/deployment",
     "@sotaoi/omni": "file:../packages/sotaoi-omni/deployment",
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "@app/omni": "file:../app-omni",
+    "@app/streaming": "file:./",
     "@sotaoi/api": "git+https://github.com/sotaoi/api#0.9.1",
     "@sotaoi/omni": "git+https://github.com/sotaoi/omni#0.9.1",
     "forever": "^4.0.1",
