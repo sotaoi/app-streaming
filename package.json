@@ -8,6 +8,7 @@
   },
   "scripts": {
     "bootstrap": "npm install --no-audit --no-fund",
+    "bootstrap:prod": "npm install --production --no-audit --no-fund",
     "start:streaming": "NODE_ENV=development nodemon --config ./cfg-nodemon-streaming.json",
     "start:streaming:prod": "NODE_ENV=production forever start -v -c node streaming.entry.js",
     "start:streaming:prod:sim": "NODE_ENV=production node streaming.entry",
