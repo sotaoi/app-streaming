@@ -1,9 +1,9 @@
 const { init } = require('@app/omni/init');
 init();
-import { startSocket } from '@sotaoi/api/io';
-import fs from 'fs';
-import path from 'path';
-import { getAppInfo } from '@sotaoi/omni/get-app-info';
+const { startSocket } = require('@sotaoi/api/io');
+const fs = require('fs');
+const path = require('path');
+const { getAppInfo } = require('@sotaoi/omni/get-app-info');
 
 const main = async () => {
   const appInfo = getAppInfo();
