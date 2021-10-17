@@ -9,9 +9,10 @@
   "scripts": {
     "bootstrap": "npm install --no-audit --no-fund",
     "start:streaming": "NODE_ENV=development nodemon --config ./cfg-nodemon-streaming.json",
-    "start:streaming:prod": "NODE_ENV=production forever start -v -c ts-node streaming.entry.ts",
-    "restart:streaming:prod": "forever restart streaming.entry.ts",
-    "stop:streaming:prod": "forever stop streaming.entry.ts",
+    "start:streaming:prod": "NODE_ENV=production forever start -v -c node streaming.entry",
+    "start:streaming:prod:sim": "NODE_ENV=production node streaming.entry",
+    "restart:streaming:prod": "forever restart streaming.entry",
+    "stop:streaming:prod": "forever stop streaming.entry",
     "deploy:astreaming": "node ./scripts/deploy/deploy-astreaming",
     "deploy:reload": "node ./scripts/deploy/deploy-reload-astreaming",
     "clean:astreaming": "node ./scripts/clean/clean-astreaming"
