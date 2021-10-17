@@ -14,7 +14,7 @@
     "restart:streaming:prod": "forever restart streaming.entry.js",
     "stop:streaming:prod": "forever stop streaming.entry.js",
     "deploy:astreaming": "node ./scripts/deploy/deploy-astreaming",
-    "deploy:reload": "node ./scripts/deploy/deploy-reload-astreaming",
+    "deploy:reload-astreaming": "node ./scripts/deploy/deploy-reload-astreaming",
     "clean:astreaming": "node ./scripts/clean/clean-astreaming"
   },
   "devDependencies": {
