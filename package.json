@@ -11,7 +11,10 @@
     "start:streaming": "NODE_ENV=development nodemon --config ./cfg-nodemon-streaming.json",
     "start:streaming:prod": "NODE_ENV=production forever start -v -c ts-node streaming.entry.ts",
     "restart:streaming:prod": "forever restart streaming.entry.ts",
-    "stop:streaming:prod": "forever stop streaming.entry.ts"
+    "stop:streaming:prod": "forever stop streaming.entry.ts",
+    "deploy:astreaming": "node ./scripts/deploy/deploy-astreaming",
+    "deploy:reload": "node ./scripts/deploy/deploy-reload-astreaming",
+    "clean:astreaming": "node ./scripts/clean/clean-astreaming"
   },
   "devDependencies": {
     "@app/omni": "file:../app-omni",
