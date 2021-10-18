@@ -8,7 +8,7 @@
   },
   "scripts": {
     "bootstrap": "npm install --no-audit --no-fund",
-    "bootstrap:prod": "npm install --production --no-audit --no-fund",
+    "bootstrap:prod": "npm run bootstrap",
     "start:streaming": "NODE_ENV=development nodemon --config ./cfg-nodemon-streaming.json",
     "start:streaming:prod": "NODE_ENV=production forever start -v -c node streaming.entry.js",
     "start:streaming:prod:sim": "NODE_ENV=production node streaming.entry",
@@ -16,7 +16,8 @@
     "stop:streaming:prod": "forever stop streaming.entry.js",
     "deploy:astreaming": "node ./scripts/deploy/deploy-astreaming",
     "deploy:reload-astreaming": "node ./scripts/deploy/deploy-reload-astreaming",
-    "clean:astreaming": "node ./scripts/clean/clean-astreaming"
+    "clean:astreaming": "node ./scripts/clean/clean-astreaming",
+    "postinstall": "node ./scripts/hook/hook-postinstall"
   },
   "devDependencies": {
     "@app/omni": "file:../app-omni",
