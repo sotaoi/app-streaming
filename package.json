@@ -16,6 +16,7 @@
     "stop:streaming:prod": "forever stop streaming.entry.js",
     "deploy:astreaming": "node ./scripts/deploy/deploy-astreaming",
     "deploy:reload-astreaming": "node ./scripts/deploy/deploy-reload-astreaming",
+    "clean:bootstrap": "node ./scripts/clean/clean-bootstrap",
     "clean:astreaming": "node ./scripts/clean/clean-astreaming",
     "postinstall": "node ./scripts/hook/hook-postinstall"
   },
