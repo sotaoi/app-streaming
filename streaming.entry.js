@@ -17,7 +17,7 @@ const main = async () => {
   // const timeoutFn = async () => {
   //   clearTimeout(timeout);
   //   try {
-  //     const apiStatus = await (await nodeFetch(`https://${appInfo.domain}/api/status`)).json();
+  //     const apiStatus = await (await nodeFetch(`https://${appInfo.proxyDomain}/api/status`)).json();
   //     state.maintenance = !!apiStatus.xdata.maintenance;
   //     setTimeout(timeoutFn, 1000);
   //   } catch (err) {
