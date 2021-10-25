@@ -33,6 +33,7 @@
     "@sotaoi/api": "git+https://github.com/sotaoi/api#0.9.1",
     "@sotaoi/omni": "git+https://github.com/sotaoi/omni#0.9.1",
     "forever": "^4.0.1",
+    "node-fetch": "^2.6.1",
     "nodemon": "^2.0.4"
   }
 }
